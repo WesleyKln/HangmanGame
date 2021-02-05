@@ -76,11 +76,11 @@ public class Game {
         int idxCharUpperCaseInWord = this.wordToGuess.indexOf(UserCharInUpperCase);
 
         if (idxCharLowerCaseInWord == -1 && idxCharUpperCaseInWord == -1) {
-            System.out.println("Dommage, la lettre " + "\'" + userLetter + "\'"+ " n'est pas dans le mot !");
+            System.out.println("Too bad, the letter " + "\'" + userLetter + "\'"+ " is not in the word !");
             // Update the counter with 1 attempts
             this.attemptsLeft--;
         } else {
-            System.out.println("Bravo, la lettre " + "\'" + userLetter + "\'"+ " est dans le mot.");
+            System.out.println("Congrats, the letter " + "\'" + userLetter + "\'"+ " is in the word.");
             // Replace empty space by user's letter
             //1- User's letter is in lowercase while in the word to guess, it's in uppercase -> Add the letter in uppercase !
             if (Character.isLowerCase(userChar) && idxCharUpperCaseInWord >= 0) {
