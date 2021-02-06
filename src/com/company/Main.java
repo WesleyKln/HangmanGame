@@ -6,7 +6,7 @@ public class Main {
     // Launch a new game
     static Game newGame = new Game();
     static boolean isFinish = false;
-    static String pattern = "(\\p{L})";
+    static String pattern = "[a-z,A-Z]";
 
     public static void main(String[] args) {
         // Say Hello
